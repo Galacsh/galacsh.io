@@ -41,6 +41,5 @@ next-env.d.ts
 /.vscode
 
 # Posts
-/posts
 /markdown
 /public/assets
