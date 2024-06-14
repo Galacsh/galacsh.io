@@ -1,1 +1,1 @@
-{"posts":[{"title":"퇴사 후","description":"퇴사 후 약 한 달 반의 시간은 Bash 스크립트, CLI 환경에 익숙해지고 숙원이었던 Vim 세팅, 블로그 개편을 진행하는 휴식 기간이었습니다.","slug":{"full":"after-leaving-the-company","arr":["after-leaving-the-company"]},"date":"2024-06-14"}]}
+{"posts":[{"title":"퇴사 후","description":"퇴사 후 약 한 달 반이라는 시간을 어떻게 보냈는지에 대해 작성했습니다.","slug":{"full":"after-leaving-the-company","arr":["after-leaving-the-company"]},"date":"2024-06-14","tags":["vim","neovim","ideavim","blog"]}]}
