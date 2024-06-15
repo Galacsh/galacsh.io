@@ -10,7 +10,6 @@ gh.publish(
   {
     branch: 'pages',
     nojekyll: true,
-    cname: 'galacsh.io',
   },
   onDeployed
 )
