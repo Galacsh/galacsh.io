@@ -1,76 +1,57 @@
-> [!TIP]
-> For more information, read posts:
->
-> - **Demo #1 - GitHub Pages** (https://galacsh.github.io/blog-template/posts)
-> - **Demo #2 - Vercel** (https://galacsh-blog-template.vercel.app/posts)
+# Galacsh's Blog
 
-# What is this?
+This is my personal blog that was made with my [blog-template](https://github.com/Galacsh/blog-template).
 
-This is a **simple blog template** for personal blogs.
-This template generates pages from markdown files and builds a **static site**.
-So it can be hosted on any static site hosting service, such as Vercel, Netlify, GitHub Pages, etc.
+# How to use this?
 
-> This template doesn't use [MDX](https://mdxjs.com/) or [@next/mdx](https://www.npmjs.com/package/@next/mdx) directly.
-> Instead, it uses [Unified](https://unifiedjs.com/) to parse markdown files and convert them to React components.
+To my future myself:
 
-Even though this template is built
-with the [Next.js - App Router](https://nextjs.org/docs/getting-started/project-structure#app-routing-conventions),
-each post (markdown file) doesn't need to follow app routing conventions.
-Markdown files placed in `/posts` directory will be automatically converted to pages.
-This means the template can also be used with Obsidian vaults with some tweaks.
+```bash
+# Clone with submodule
+git clone --recursive git@github.com:Galacsh/galacsh.io.git
 
-Theme supports dark mode and responsive design, and is inspired by the [Next.js - Docs](https://nextjs.org/docs)
-and the [VitePress - Guide](https://vitepress.dev/guide/what-is-vitepress).
+cd galacsh.io
 
----
+# Link assets directory
+ln -s "$(pwd)/posts/assets" "public/assets"
 
-# Main Features (Roadmap)
+# Install dependencies
+npm install
 
-- [x] Static export
-- [x] Landing page
-- [x] [Dark mode support](https://galacsh.github.io/blog-template/features/dark-mode.md)
-- [x] Responsive design
-- [x] Markdown file processing
-- [x] [Posts filtering](https://galacsh.github.io/blog-template/features/posts-filtering-sorting.md)
-- [x] [Posts sorting](https://galacsh.github.io/blog-template/features/posts-filtering-sorting.md)
-- [x] [Command Menu](https://galacsh.github.io/blog-template/features/command-menu.md)
-- [x] [Copy link to clipboard button](https://galacsh.github.io/blog-template/features/copy-link-to-clipboard.md)
-- [x] [Quick scroll button](https://galacsh.github.io/blog-templatefeatures/quick-scroll.md)
-- [x] Related posts (Show posts in same directory)
-- [x] On this page (Table of contents)
-- [x] [Draft](https://galacsh.github.io/blog-templatefeatures/draft.md)
-- [x] Error page
-- [x] `sitemap.xml`
-- [x] `robots.txt`
+# Create environment variables file
+cat << EOF > .env.production.local
+# Name of the website
+NEXT_PUBLIC_APP_NAME="Galacsh"
 
----
+# Short name of the website
+NEXT_PUBLIC_APP_SHORT_NAME="Galacsh"
 
-# Main Dependencies
+# Description of the website
+NEXT_PUBLIC_APP_DESCRIPTION="Galacsh's personal blog."
 
-- [Next.js 14](https://nextjs.org/)
-- [shadcn/ui](https://ui.shadcn.com/)
-- [Unified](https://unifiedjs.com/)
-- [Tailwind CSS](https://tailwindcss.com/)
+# URL of the website (e.g. https://galacsh.github.io)
+NEXT_PUBLIC_BASE_URL="https://galacsh.io"
 
----
+# About the author
+NEXT_PUBLIC_ABOUT=">>>> Fill this <<<<"
 
-# Why didn't I use these?
+# Copyright range (e.g. 2023-2024 or 2024)
+NEXT_PUBLIC_COPYRIGHT_RANGE="2024"
 
-## @next/mdx
+# Google ANALYTICS
+NEXT_PUBLIC_GOOGLE_ANALYTICS="G-0HR866Y002"
 
-I didn't want to follow app routing conventions for each post.
+# Google Site Verification
+NEXT_PUBLIC_VERIFICATION_GOOGLE="cAdoZS7D10cMvqzHphlKCRYBFngAkTHiWSf1pQDNrb8"
 
-## next-mdx-remote
+# Naver Site Verification
+NEXT_PUBLIC_VERIFICATION_NAVER="f2b89b689efac87b9c27e08958ec1df1be546d94"
+EOF
 
-I wanted to have more control over the markdown parsing process.
+# Test
+npm start
 
-For example:
+# Deploy
+npm run deploy
+```
 
-- Caching the list of posts and their metadata
-- Handle slug generation
-
-## ContentLayer
-
-By the time I started this project, it seemed like the project was not actively maintained and unstable.
-
-> [Proposal to become a maintainer for Contentlayer #651](https://github.com/contentlayerdev/contentlayer/issues/651)
