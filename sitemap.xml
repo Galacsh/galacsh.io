@@ -10,6 +10,11 @@
 <changefreq>daily</changefreq>
 </url>
 <url>
+<loc>https://galacsh.io/posts/projects/nginx-certbot</loc>
+<lastmod>2024-08-02</lastmod>
+<changefreq>daily</changefreq>
+</url>
+<url>
 <loc>https://galacsh.io/posts/web/etc/ga-gtag-gtm</loc>
 <lastmod>2024-06-14</lastmod>
 <changefreq>daily</changefreq>
