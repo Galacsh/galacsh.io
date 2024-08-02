@@ -1,13 +1,13 @@
 import type { ComponentProps } from 'react'
 
 const commonClassName = [
-  'leading-tight font-bold mt-12 mb-5',
-  '[h1+&]:mt-5',
-  '[h2+&]:mt-5',
-  '[h3+&]:mt-5',
-  '[h4+&]:mt-5',
-  '[h5+&]:mt-5',
-  '[h6+&]:mt-5',
+  'leading-tight font-extrabold mt-12 mb-6',
+  '[h1+&]:mt-6',
+  '[h2+&]:mt-6',
+  '[h3+&]:mt-6',
+  '[h4+&]:mt-6',
+  '[h5+&]:mt-6',
+  '[h6+&]:mt-6',
 ].join(' ')
 
 export function H6({ children, id }: ComponentProps<'h6'>) {
