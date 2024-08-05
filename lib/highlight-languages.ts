@@ -5,6 +5,7 @@ import css from 'highlight.js/lib/languages/css'
 import dockerfile from 'highlight.js/lib/languages/dockerfile'
 import go from 'highlight.js/lib/languages/go'
 import gradle from 'highlight.js/lib/languages/gradle'
+import http from 'highlight.js/lib/languages/http'
 import java from 'highlight.js/lib/languages/java'
 import json from 'highlight.js/lib/languages/json'
 import javascript from 'highlight.js/lib/languages/javascript'
@@ -32,6 +33,7 @@ export const languages = {
   dockerfile,
   go,
   gradle,
+  http,
   java,
   json,
   javascript,
